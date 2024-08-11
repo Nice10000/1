@@ -1,0 +1,40 @@
+
+<html>
+  <h1>Category Management</h1>
+  {{cats}}
+  <form>
+  <label>Name</label>
+  <input/>
+  <br>
+  <button>Add</button>
+  <button>Delete</button>
+  </form>
+  
+  <label>Name Contains</label>
+  <input/>
+  <button>Search</button>
+  
+  <table border="1">
+  
+  <th>Id</th>
+  <th>Name</th>
+  <th>Action</th>
+  </tr>
+
+  {% for  Category in cats %}
+  <tr>
+  <td>{{Category.id}}</td>
+  <td>{{Category.name}}</td>
+  <td><button>view</button></td>
+  </tr>
+  {% endfor %}
+  
+  
+  </table>
+  <button>Previous</butcon>
+  <label>1</label>
+  <button>Next</button>
+
+
+
+  </html>
